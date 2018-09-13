@@ -8,8 +8,13 @@
 */
 const max = arr => {
   /* your logic here...*/
-  return Math.max.apply(null, arr);
-
+  let finiteArr = [];
+  for(let i = 0; i < arr.length; i++){
+    if(isFinite(arr[i])){
+      finiteArr.push(arr[i]);
+    }
+  }
+  return Math.max.apply(null, finiteArr);
 };
 
 export default max;
