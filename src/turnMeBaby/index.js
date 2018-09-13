@@ -9,6 +9,13 @@
  */
 const turnMeBaby = str => {
   /* your logic here...*/
+  if(typeof str != 'string'){
+    throw new Error();
+  }
+  let splitStr = str.split('');
+  let reverseArr = splitStr.reverse();
+  let joinArr = reverseArr.join('');
+  return joinArr;
 };
 
 export default turnMeBaby;

@@ -9,6 +9,7 @@
  */
 const isObject = data => {
   /* your logic here...*/
+  return typeof data === 'function';
 };
 
 export default isObject;

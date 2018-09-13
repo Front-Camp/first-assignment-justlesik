@@ -8,6 +8,8 @@
 */
 const max = arr => {
   /* your logic here...*/
+  return Math.max.apply(null, arr);
+
 };
 
 export default max;

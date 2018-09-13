@@ -1,3 +1,5 @@
+import { isNumber } from "util";
+
 /**
 * This function should return sum of two numbers
 *
@@ -11,6 +13,23 @@
 */
 const sum = (a, b) => {
   /* your logic here...*/
+  // if (isNaN(a) || isNaN(b)){
+  //   return false
+  // } else if (isFinite(a) || isFinite(b)){
+  //   return false
+  // } else {
+  //   return a + b
+  // }
+  if(isNaN(a) || isNaN(b)){
+    throw new Error();
+  }
+  else if(a == string || b == string) {
+    throw new Error();
+  } 
+  else if(isNumber(a) && isNumber(b)){
+    return a + b
+  }
+ 
 };
 
 export default sum;
